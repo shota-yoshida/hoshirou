@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:note="https://note.com" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>hoshirou</title>
+    <description/>
+    <link>https://note.com/hoshirou</link>
+    <atom:link rel="self" type="application/rss+xml" href="https://note.com/hoshirou/rss/"/>
+    <copyright>hoshirou</copyright>
+    <webfeeds:icon>https://d2l930y2yx77uc.cloudfront.net/assets/default/default_note_logo-100a27d592505c50c29b032c0554570c955f312b8937727c8777fd87b3068c71.png</webfeeds:icon>
+    <webfeeds:logo>https://d2l930y2yx77uc.cloudfront.net/assets/default/default_note_logo-100a27d592505c50c29b032c0554570c955f312b8937727c8777fd87b3068c71.png</webfeeds:logo>
+    <webfeeds:accentColor>249F80</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+    <webfeeds:analytics id="UA-48687000-1" engine="GoogleAnalytics"/>
+    <language>ja</language>
+    <lastBuildDate>Sat, 05 Dec 2020 16:41:50 +0900</lastBuildDate>
+    <item>
+      <title>test</title>
+      <media:thumbnail>https://assets.st-note.com/img/1606543523055-RvC0ldc8oR.jpg</media:thumbnail>
+      <description><![CDATA[<img src='https://assets.st-note.com/img/1606543523055-RvC0ldc8oR.jpg'/><p>test</p><br/><a href='https://note.com/hoshirou/n/nd112677ee8bd'>続きをみる</a>]]></description>
+      <note:creatorImage>https://d2l930y2yx77uc.cloudfront.net/assets/default/default_profile_3-d1242380c9f3a4409c40fcf9d224c36c964724a26248ce3bdc701227cb8f5a07.png</note:creatorImage>
+      <note:creatorName>hoshirou</note:creatorName>
+      <pubDate>Sat, 28 Nov 2020 15:06:00 +0900</pubDate>
+      <link>https://note.com/hoshirou/n/nd112677ee8bd</link>
+      <guid>https://note.com/hoshirou/n/nd112677ee8bd</guid>
+    </item>
+  </channel>
+</rss>
