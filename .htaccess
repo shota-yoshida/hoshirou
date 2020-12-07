@@ -1,0 +1,3 @@
+<FilesMatch "\.html$">
+  AddHandler php7-script .html
+</FilesMatch>
