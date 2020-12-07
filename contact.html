@@ -11,8 +11,8 @@
         <form action="./send.php" method="post">
             <table class="table mt-20 f-12">
               <tr><td>お名前</td><td><input type="text" name="name" value="" class="form-control" placeholder="山田太郎" required></td></tr>
-              <tr><td>電話番号</td><td><input type="text" name="tel" value="" class="form-control" placeholder="090-0000-0000" pattern="^\d{11}$|^\d{3,4}-\d{3,4}-\d{4}$" required></td></tr>
-              <tr><td>メールアドレス</td><td><input type="text" name="email" value="" class="form-control" placeholder="example@example.com" pattern="[\w\d_-]+@[\w\d_-]+\.[\w\d._-]+" required></td></tr>
+              <tr><td>電話番号</td><td><input type="tel" name="tel" value="" class="form-control" placeholder="090-0000-0000" required></td></tr>
+              <tr><td>メールアドレス</td><td><input type="email" name="email" value="" class="form-control" placeholder="example@example.com" required></td></tr>
               <tr><td>内容</td><td><textarea name="note" class="form-control" rows="10" required></textarea> </td></tr>
               <tr><td><button type="submit" class="btn btn-secondary f-12">送信</button></td><td></td></tr>
             </table>
