@@ -9,19 +9,19 @@
 	<div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link" href="/concept.html">concept</a>
+				<a class="nav-link roboto" href="/concept.html">concept</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/about.html">about</a>
+				<a class="nav-link roboto" href="/about.html">about</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/order.html">order</a>
+				<a class="nav-link roboto" href="/order.html">order</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-muted">shop</a>
+				<a class="nav-link text-muted roboto">shop</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="/product.html">product</a>
+				<a class="nav-link roboto" href="/product.html">product</a>
 			</li>
 		</ul>
 	</div>
