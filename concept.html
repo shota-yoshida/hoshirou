@@ -3,6 +3,7 @@
 <html lang="ja">
   <?php include('./common/head.php'); ?>
   <body>
+    <div id="page_top" style="right: -50px; bottom: 31px;"><a href="#"></a></div>
     <?php include('./common/nav.php'); ?>
 
     <div class="container mt-30 mb-30">
@@ -16,8 +17,7 @@
 
         <figure class="figure mt-40 w-100">
           <img data-src="./img/_MG_6384.jpg" src="./img/_MG_6384-thumbnail.jpg" class="figure-img img-fluid rounded lazyestload">
-          <figcaption class="figure-caption f-12">ひとつひとつの木材をよく観察 をして少しでも良い状態を保てるように、その都度考え処置をしております。<br />
-            のこぎりで板を割くところ</figcaption>
+          <figcaption class="figure-caption f-12">のこぎりで板を割くところ</figcaption>
         </figure>
 
         <figure class="figure mt-30 w-100">
@@ -70,6 +70,7 @@
 
         <figure class="figure mt-30 w-100">
           <img data-src="./img/_MG_6413.jpg" src="./img/_MG_6413-thumbnail.jpg" class="figure-img img-fluid rounded lazyestload">
+          <figcaption class="figure-caption f-12">ひとつひとつの木材をよく観察 をして少しでも良い状態を保てるように、その都度考え処置をしております。</figcaption>
         </figure>
 
         <figure class="figure mt-30 w-100">
@@ -105,16 +106,45 @@
 
         <p class="text-center font-weight-bold font-italic mt-30 mb-30 f-14 fls-015rem">出会う木材で、<br class="d-md-none">現在の建物に考慮したものづくりを。</p>
 
-        <p class="f-12 fls-015rem">
-          2020 年 12月末日<br>
-          保精郎 高橋裕也
-        </p>
+        <div class="f-12 fls-015rem flex-row-reverse d-flex">
+          <div>
+            2020 年 12月末日<br>
+            保精郎 高橋裕也
+          </div>
+        </div>
       </main>
     </div>
 
     <?php include('./common/footer.php'); ?>
     <?php include('./common/javascript.php'); ?>
     <script src="js/lazyestload.js"></script>
+    <script>
+      jQuery(function() {
+        var appear = false;
+        var pagetop = $('#page_top');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {  //100pxスクロールしたら
+            if (appear == false) {
+              appear = true;
+              pagetop.stop().animate({
+                'right': '0px' //右から0pxの位置に
+              }, 300); //0.3秒かけて現れる
+            }
+          } else {
+            if (appear) {
+              appear = false;
+              pagetop.stop().animate({
+                'right': '-50px' //右から-50pxの位置に
+              }, 300); //0.3秒かけて隠れる
+            }
+          }
+        });
+        pagetop.click(function () {
+          $('body, html').animate({ scrollTop: 0 }, 500); //0.5秒かけてトップへ戻る
+          return false;
+        });
+      });
+    </script>
 
   </body>
 </html>

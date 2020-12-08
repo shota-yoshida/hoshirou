@@ -19,6 +19,39 @@ img.lazyestload {
     filter: blur(8px);
 }
 
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: gray;
+    opacity: 0.6;
+}
+#page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f0d8';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 38px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
 /* utility */
 .mt-10{ margin-top:10px!important; }
 .mb-10{ margin-bottom:10px!important; }
@@ -156,6 +189,7 @@ img.lazyestload {
 .line-h-15{ line-height:1.5!important; }
 .line-h-2{ line-height:2!important; }
 .line-h-25{ line-height:2.5!important; }
+.line-h-35{ line-height:3.5!important; }
 .f-b{ font-weight:bold!important; }
 .fls-015rem{ letter-spacing: 0.15rem!important; }
 .fls-025rem{ letter-spacing: 0.25rem!important; }
