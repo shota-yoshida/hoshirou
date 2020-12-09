@@ -1,6 +1,6 @@
 <?php
 // メール送信
-$to = "yoshida.shota@growfit.co.jp";
+$to = "info@hoshirou.com";
 $subject = "HPからのお問合せ";
 $message = "
 お名前: {$_POST['name']}
