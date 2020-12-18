@@ -4,7 +4,6 @@ mb_internal_encoding("utf-8");
 
 //宛先、Fromを設定
 $to = "info@hoshirou.com";
-$fromname = mb_encode_mimeheader("hoshirou");
 $from = "noreply@hoshirou.com";
 
 //headerを設定
@@ -12,7 +11,7 @@ $charset = "UTF-8";
 $headers['MIME-Version'] 	= "1.0";
 $headers['Content-Type'] 	= "text/plain; charset=".$charset;
 $headers['Content-Transfer-Encoding'] 	= "8bit";
-$headers['From'] 		= '"'.$fromname.'"<'.$from.'>"';
+$headers['From'] 		= $from;
 
 //headerを編集
 foreach ($headers as $key => $val) {
