@@ -3,7 +3,7 @@
 mb_internal_encoding("utf-8");
 
 //宛先、Fromを設定
-$to = "toaddress@example.com";
+$to = "info@hoshirou.com";
 $fromname = mb_encode_mimeheader("hoshirou");
 $from = "noreply@hoshirou.com";
 
