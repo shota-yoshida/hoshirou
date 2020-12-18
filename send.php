@@ -1,16 +1,45 @@
 <?php
 // メール送信
-$to = "info@hoshirou.com";
-$subject = "HPからのお問合せ";
-$message = "
+mb_internal_encoding("utf-8");
+
+//宛先、Fromを設定
+$to = "toaddress@example.com";
+$fromname = mb_encode_mimeheader("hoshirou");
+$from = "noreply@hoshirou.com";
+
+//headerを設定
+$charset = "UTF-8";
+$headers['MIME-Version'] 	= "1.0";
+$headers['Content-Type'] 	= "text/plain; charset=".$charset;
+$headers['Content-Transfer-Encoding'] 	= "8bit";
+$headers['From'] 		= '"'.$fromname.'"<'.$from.'>"';
+
+//headerを編集
+foreach ($headers as $key => $val) {
+	$arrheader[] = $key . ': ' . $val;
+}
+$strHeader = implode("\n", $arrheader);
+
+//件名を設定（JISに変換したあと、base64エンコードをしてiso-2022-jpを指定する）
+$subject = "=?iso-2022-jp?B?".base64_encode(mb_convert_encoding("HPからのお問い合わせ","JIS","UTF-8"))."?=";
+
+//本文を設定
+$body = "
 お名前: {$_POST['name']}
 電話番号: {$_POST['tel']}
 メールアドレス: {$_POST['email']}
 内容:
 {$_POST['note']}
 ";
-$headers = "From: noreply@hoshirou.com";
-mail($to, $subject, $message, $headers);
+
+//送ります！
+mail(
+	$to,
+	$subject,
+	$body,
+	$strHeader
+);
+
 ?>
 
 <?php $page = 'CONTACT'; ?>
