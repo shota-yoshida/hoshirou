@@ -17,7 +17,7 @@
 				<a class="nav-link roboto" href="/order.html">order</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-muted roboto">shop</a>
+				<a class="nav-link roboto" href="http://re-hoshirou.stores.jp/" target="_blank">shop</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link roboto" href="/product.html">product</a>
